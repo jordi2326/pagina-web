@@ -1,0 +1,2 @@
+ideas : 
+-una pagina web per fer estadísticas en partits de basquet 
