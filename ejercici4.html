@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, tr, td, th{
+border-collapse: collapse;	
+}
+td, th{
+text-align: center;
+border:1px solid black;
+width: 20%;
+}
+</style>
+</head>
+
+<body>
+<h1> Big heading! </h1>
+
+
+<form action="/action_page.php">
+<label for="name">First name: </label>
+<input type="text" name="firstname" value="Mickey" id="name">
+<br>
+<label for="color">Color: </label>
+<input type="color" name="color" id="color" value="#2fb8d0">
+<br>
+<label for="bday">Birthday: </label>
+<input type="date" name="bday" id="bday">
+<br><br>
+<input type="submit" value="Submit">
+</form>
+
+
+
+<form action=" /form.js ">
+Password: <input type="password" name="pass" placeholder="your password here"><br>
+<fieldset>
+Email: <input type="email" name="email" placeholder="example@email.com" ><br>
+Number: <input type="number" name="number" value="1" max="5"><br>
+Size: <input type="range" name="range" value="4" step="2"><br>
+Url: <input type="url" name="url" placeholder="http://www.google.com"><br>
+</fieldset>
+<input type="submit" value="Submit">
+</form>
+
+
+
+<form action="/action_page.php">
+Best color:
+<input list="colors" name="color">
+<datalist id="colors">
+<option value="Blue"></option>
+<option value="Red"></option>
+<option value="Yellow"></option>
+<option value="Green"></option>
+</datalist>
+<br><br>
+<input type="submit" value="Submit">
+</form>
+
+<form action="/action_page.php">
+<label for="male">Male: </label>
+<input type="radio" name="gender" value="male" id="male" checked><br>
+<label for="female">Female: </label>
+<input type="radio" name="gender" value="female" id=”female”><br>
+<label for="other">Other: </label>
+<input type="radio" name="gender" value="other" id=”other”><br>
+<input type="checkbox" name="gender2" value="NB"> Non-binary <br>
+<input type="checkbox" name="gender3" value="AH"> Apache Helicopter <br>
+<input type="submit" value="Submit">
+</form>
+
+<form action="/action_page.php">
+Essay:
+<textarea name="message" rows="10" cols="30">
+You need to be careful with textareas because, for example, this line is one line break
+from the start, so sometimes you are adding spaces or breaks without knowledge of it.
+</textarea>
+<br><br>
+<input type="submit" value="Submit">
+</form>
+
+<div>
+<p> This is something we will be able to move </p>
+<br>
+</div>
+<div>
+<span> This div contains other divs inside </span>
+<div><br></div>
+<div><br></div>
+</div>
+
+<table>
+<tr>
+<th>Degree</th>
+<th colspan="2">Student</th>
+<th>Age</th>
+<th>Course</th>>
+</tr>
+<tr>
+
+<td rowspan="3"> Computer Science</td>
+<td>Pepito</td>
+<td>G</td>
+<td>22</td>
+<td>1r</td>
+</tr>
+<tr>
+<td>Jack</td>
+<td>Meier</td>
+<td>94</td>
+<td>???</td>
+</tr>
+<tr>
+<td>John</td>
+<td>Brown</td>
+<td>18</td>
+<td>4rt</td>
+</tr>
+<tr>
+<td>Electrical Engineering</td>
+<td>Aina</td>
+<td>Soler</td>
+<td>23</td>
+<td>4rt</td>
+</tr>
+<tr>
+<td colspan="4">Random tiem </td>
+
+</tr>
+
+<tr>
+<td>A</td>
+<td rowspan="2">B</td>
+<td colspan="2 ">C</td>
+<td>E</td>
+</tr>
+
+<tr>
+<td rowspan="2">A</td>
+
+<td colspan="1">C</td>
+<td colspan="2">D</td>
+
+</tr>
+
+<tr>
+
+<td colspan="3" rowspan="2">B</td>
+<td>C</td>
+</tr>
+
+<tr>
+
+<td >C</td>
+<td>A</td>
+</tr>
+
+</table> 
+
+<video width="330" height="250" controls autoplay>
+<source src="JunsKitchen.webm" type="video/webm">
+This browser does not support the video tag.
+</video>
+<br>
+<audio controls>
+<source src="ShapeofYou.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>
