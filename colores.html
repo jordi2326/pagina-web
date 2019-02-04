@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<button onclick="myFunction()">try</button>
+<img src="hola" id="2">
+
+
+
+<script>
+
+	
+	var cont =0;
+
+function myFunction() {
+	console.log("hola");
+	if(cont == 0){
+	  document.getElementById("2").src = "red.png";
+      }
+      if(cont == 1 ){
+	  document.getElementById("2").src = "green.png";
+	}
+	if(cont==2){
+document.getElementById("2").src = "blue.png";
+}
+ ++cont;
+ if (cont == 3 ) cont =0 ; 
+ setTimeout(myFunction,1000);
+  
+  }
+</script>
+
+</body>
+</html>
