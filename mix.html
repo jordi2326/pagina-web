@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+#casa {
+	width: 400px; 
+	 height: 400px; 
+  
+} 
+#demo{
+     
+	 text-align: right;
+	
+	  font-size: 40px;
+	    border: 3px solid green;
+
+
+}
+#container {
+		height: 100vh;
+		width : 100vw ;
+		position : absolute;
+	    		background-color: chocolate
+	
+		
+	}
+
+
+</style>
+</head>
+<body>
+	<header>
+<h3 id="demo"  ></h3>
+<img  src="hola" id="casa"></img>
+
+		<script>
+       var cont = 0 ; 
+       var myVar = setInterval(myFunction, 1000);
+		function myFunction() {
+	console.log("hola");
+	if(cont == 0){
+      document.getElementById("casa").src="https://www.riotgames.com/darkroom/1440/f5f167c525dd1f3989bcfe9ebd3c7995:a842310bd11ee602459b324d098e0e02/barcelona-main.jpg";
+
+      }
+      else if(cont == 1 ){
+      	 document.getElementById("casa").src="http://www.cocacolaespana.es/content/dam/journey/es/es/private/historia/mucho-mas-que-un-refresco/2017/gira-jovenes-barcelona/foto-barcelona-gira-jovenes.jpg";
+	}
+	else if(cont==2){
+		 document.getElementById("casa").src="https://www.lavanguardia.com/r/GODO/LV/p5/WebSite/2018/02/23/Recortada/img_msanoja_20160721-155139_imagenes_lv_getty_istock_19077924_small-534-k2sH-U441005197490xHH-992x558@LaVanguardia-Web.jpg";
+}
+else if(cont==3){
+  document.getElementById("casa").src="https://www.especializa-t.com/wp-content/uploads/2018/09/barcelona-aerial-view-1080x675.jpg";
+}
+else if(cont==4){
+ document.getElementById("casa").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbZd3_7ccHuHd0jEzfC9XU6OQl6lmH3hRWbFvJI6ycxGkAZa8KwA";
+}
+else if(cont==5){
+		 document.getElementById("casa").src="https://www.hanway.es/wp-content/uploads/2017/12/Apartamentos-en-barcelona-hanway-blog-viajes.jpg";
+	  	   	  }
+	   	  		
+	  
+
+    ++cont;
+    cont = cont %6;
+
+				
+
+  
+  }
+  var myVar = setInterval(myTimer, 1000);
+var minuts = 0 ; 
+var segons = 0 ; 
+var horas = 0; 
+function myTimer() {
+   segons += 1 ; 
+   if (segons == 60 ) {
+   	minuts+=1;
+   	segons = 0 ; 
+   }
+   if (minuts == 60 ) {
+   	horas +=1 ; 
+   	minuts = 0 ; 
+   	segons = 0 ; 
+   }
+   if (horas == 24) {
+   	minuts = horas = segons = 0 ; 
+   }
+  document.getElementById("demo").innerHTML = horas +" : " + minuts + " : " + segons;
+}
+
+</script>
+	</header>
+
+  <article>
+  	<input type="text" id="myText" value="  ">
+<button onclick="myFunction()">try</button>
+<p id="demo1"></p>
+  <script>
+  	function myFunction() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo1").innerHTML = "Hello "  + x;
+}
+
+  </script>	
+  </article>
+  <footer>
+  	     <div id = "container">  </div>
+
+  </footer>
+
+
+</body>
+</html>
