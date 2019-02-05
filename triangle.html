@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+<body>
+
+<i class="fas fa-exclamation-triangle fa-5x" style="position: absolute"></i>
+
+
+<script >
+	var myVar = setInterval(a, 1000);
+
+	function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
+function a (){
+
+ document.getElementsByClassName("fas")[0].style.top = getRandomArbitrary(0, screen.height)+"px";
+  document.getElementsByClassName("fas")[0].style.bottom = getRandomArbitrary(0, screen.height)+"px";
+   document.getElementsByClassName("fas")[0].style.left = getRandomArbitrary(0, screen.width)+"px";
+    document.getElementsByClassName("fas")[0].style.right = getRandomArbitrary(0, screen.width)+"px";
+}
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
