@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<style>
+ 
+p {
+  font-size: 250px;
+}
+</style>
+<body>
+
+<p id="demo"  ></p>
+
+<script>
+var myVar = setInterval(myTimer, 1000);
+var minuts = 0 ; 
+var segons = 0 ; 
+var horas = 0; 
+function myTimer() {
+   segons += 1 ; 
+   if (segons == 60 ) {
+   	minuts+=1;
+   	segons = 0 ; 
+   }
+   if (minuts == 60 ) {
+   	horas +=1 ; 
+   	minuts = 0 ; 
+   	segons = 0 ; 
+   }
+   if (horas == 24) {
+   	minuts = horas = segons = 0 ; 
+   }
+  document.getElementById("demo").innerHTML = horas +" : " + minuts + " : " + segons;
+}
+</script>
+
+</body>
+</html>
